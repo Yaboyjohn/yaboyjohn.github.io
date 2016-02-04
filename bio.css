@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(215, 219, 207);
+}
+
+/* header */
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: #081F3F;
+}
+
+#name {
+  font-family: Josefin Sans;
+  color: #FCB326;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  padding-top: 19px;
+}
+
+#intro {
+  font-family: Josefin Sans;
+  padding-top: 15px;
+  font-size: 25px;
+  margin: 0;
+}
+
+#intro2 {
+  font-family: Josefin Sans;
+  margin: 0;
+  padding-top: 15px;
+}
+
+p {
+  font-family: Alegreya Sans;
+  margin: 0;
+  padding: 0;
+}
+/* main body */
+#cal {
+  width: 40%;
+  height: 86%;
+  position: absolute;
+}
+
+#info-container {
+  position: absolute;
+  left: 45%;
+  width: 700px;
+}
+
+.titles {
+  padding: 0;
+  margin: 0;
+  font-family: Source Sans Pro;
+  font-size: 25px;
+}
+
+#gradyear {
+  padding-top: 15px;
+}
+
+/* slide out menu */
+.navbar {
+  position: absolute;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: 800;
+}
+
+#menu-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-image: url("pictures/hamburger.png");
+}
+
+#menu-container {
+  position: relative;
+  margin-top: 25px;
+  margin-right: 40px;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+
+#menu-container:hover {
+  background-color: rgb(23, 165, 226);
+  cursor: pointer;
+  z-index: 300;
+}
+
+/* menu */
+.slideout-menu-container {
+  width: 300px;
+  height: 470px;
+  position: relative;
+  background-color: #081F3F;
+  border-left: solid black 2px;
+  border-bottom: solid black 2px;
+  border-top: solid black 2px;
+}
+
+.slideout-container {
+  width: 300px;
+  height: 470px;
+  position: absolute;
+  right: -320px;
+}
+
+.slideout-menu{
+  list-style-type: none;
+  padding-top: 50px;
+  padding-left: 0px;
+}
+
+.slideout-options {
+  border-top: 2px solid white;
+  list-style-type: none;
+  color: white;
+  font-family: Lato;
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.slideout-options:hover {
+  background-color: rgb(170, 165, 171);
+  cursor: pointer;
+}
+
+.slideout-menu a{
+  text-decoration: none;
+}
+
+#homeicon {
+  width: 50px;
+  height: 50px;
+  margin: 30 auto;
+  display: block;
+  opacity: 0.7;
+}
+
+#homeicon:hover {
+  cursor: pointer;
+}
+
+#contact {
+  border-bottom: 2px solid white;
+}
