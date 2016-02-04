@@ -1,1 +1,368 @@
-hello World
+<html>
+<head>
+  <link rel="stylesheet" type ="text/css" href ="style.css"></link>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Salsa">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Damion">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Mr+Dafoe">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="jqueryrotate.js"></script>
+  <script type="text/javascript" src="scroll.js"></script>
+ <!-- Slider-->
+<div class ="slider">
+  <div class = "transparent"></div>
+  <!-- First slide (sunset)-->
+  <div id ="starting-slide"class="active">
+    <div id="sunset-caption-container1">
+      <h3 id="sunset-caption-part1" class="sunset-caption">The</h3>
+      <div id="graybox1" class="graybox"></div>
+    </div>
+    <div id="sunset-caption-container2">
+      <h3 id="sunset-caption-part2" class="sunset-caption">thrill</h3>
+      <div id="graybox2" class="graybox"></div>
+    </div>
+    <div id="sunset-caption-container3">
+      <h3 id="sunset-caption-part3" class="sunset-caption">of...</h3>
+      <div id="graybox3" class="graybox"></div>
+    </div>
+    <div id="sunset-caption-container4">
+      <h3 id="sunset-caption-part4">ADVENTURE</h3>
+      <div id="graybox4" class="graybox"></div>
+    </div>
+    <img id="starter" src="pictures/sunset.jpg">
+  </div>
+  <!-- Bro slide-->
+  <div id="bro-slide" class="not-active">
+    <div id="bro-caption-container1">
+      <h3 id="bro-caption-part1" class="bro-caption">Just a lil'</h3>
+      <div id="bro-graybox1" class="graybox"></div>
+    </div>
+    <div id="bro-caption-container2">
+      <h3 id="bro-caption-part2">Brotherly love</h3>
+      <div id="bro-graybox2" class=graybox></div>
+    </div>
+    <img id="bros" src="pictures/bros.jpg">
+  </div>
+  <!-- squad slide-->
+  <div id="squad-slide" class="not-active">
+    <div id="squad-caption-container1">
+      <h3 id="squad-caption">SQUAD</h3>
+      <div id="squad-graybox" class="graybox"></div>
+    </div>
+    <img id="squad" src="pictures/innodfreshmen.jpg">
+  </div>
+  <!-- Prom Slide-->
+  <div id="last-slide"class="not-active">
+    <div id="prom-caption-container1">
+      <h3 id="prom-caption1" class="prom-caption">Prom</h3>
+      <h3 id="prom-caption2" class="prom-caption">at the</h3>
+      <h3 id="prom-caption3" class="prom-caption">Queen Mary</h3>
+      <h3 id="prom-caption4">5/16/15</h3>
+    </div>
+    <img id="prom" src="pictures/prom.jpg"></img>
+  </div>
+  <!-- Dots-->
+  <div class="slider-nav">
+    <ul class="slider-dots">
+           <li class="prev-arrow"><</li>
+           <li class="dot active-dot" id="dot1">&bull;</li>
+           <li class="dot" id="dot2">&bull;</li>
+           <li class="dot" id ="dot3">&bull;</li>
+           <li class="dot" id="dot4">&bull;</li>
+           <li class="next-arrow">></li>
+    </ul>
+  </div>
+</div>
+<!-- Slide out menu-->
+<div class ="navbar">
+  <div class="slideout-container">
+    <div class="slideout-menu-container">
+      <ul class="slideout-menu">
+        <li class="slideout-options" id="about">About</li></a>
+        <li class="slideout-options" id="projects">Projects</li>
+        <li class="slideout-options" id="contact">Contact</li>
+      </ul>
+      <a href="#"><img id="homeicon" src="pictures/homeicon.png"></a>
+    </div>
+  </div>
+  <div id="menu-container">
+    <div id="menu-icon"></div>
+  </div>
+</div>
+<!-- About page-->
+<div class="about-page">
+  <h3 class="heading">About Me</h3>
+  <!--4 pictures-->
+  <table class="table">
+    <tr>
+      <td class="quad">
+        <a href="file:///Users/JohnAng/Documents/Website/Website%20rough%20draft/Bio%20page/bio.html"><img id="johnpic" class="pic"src="pictures/john.jpg"></a>
+        <h3 id="johncaption"class="quad-caption">BIO</h3>
+      </td>
+      <td class="quad">
+        <a href="file:///Users/JohnAng/Documents/Website/Website%20rough%20draft/Interests%20Page/interests.html">
+          <img id="swim" class="pic" src="pictures/swimview.jpg"></a>
+        <h3 id="swimcaption"class="quad-caption">INTERESTS</h3>
+      </td>
+    </tr>
+    <tr>
+      <td class="quad">
+        <img id="music" class="pic" src="pictures/rave.jpg">
+        <h3 id="musiccaption" class="quad-caption">MUSIC</h3>
+      </td>
+      <td class="quad" id="project-quad">
+        <img id="project" class="pic" src="pictures/welcometext.png">
+        <h3 id="projectcaption" class="quad-caption">PROJECTS</h3>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- Music Page-->
+<div class="music-page">
+  <h4 class="x">X</h4>
+  <!--Music Slider-->
+  <div class="music-slider">
+    <!--odesza page-->
+    <div class="odesza-page ">
+    <div class="album-pic-container">
+      <h4 class="artist-info">ODESZA</h4>
+      <img id="odesza" src="pictures/odesza-group.jpg">
+    </div>
+    <div id="song-container">
+      <!--Memories song-->
+      <table class="song">
+        <tr>
+          <td class="play-option" id="memories">
+            <img class="play-arrow" id="memories-arrow" src="pictures/play-arrow.jpg">
+            <a href="https://www.youtube.com/watch?v=sRddl5qdzqE">
+              <img class="album-pic" id="memories-pic" src="pictures/odesza-album.jpg">
+            </a>
+          </td>
+          <td><p class="song-name">Memories That You Call (feat. Moonsiren)</p></td>
+        </tr>
+      </table>
+      <!--All We Need-->
+      <table class="song">
+        <tr>
+          <td class="play-option" id="allweneed">
+            <img class="play-arrow" id="allweneed-arrow" src="pictures/play-arrow.jpg">
+            <a href ="https://www.youtube.com/watch?v=Oi4Cf6lkDr4">
+              <img class="album-pic" id="allweneed-pic" src="pictures/odesza-album.jpg">
+            </a>
+          </td>
+          <td><p class="song-name">All We Need (feat. Shy Girls)</p></td>
+        </tr>
+      </table>
+      <!--Waited 4 U-->
+      <table class="song">
+        <tr>
+          <td class="play-option" id="waited">
+            <img class="play-arrow" id="waited-arrow" src="pictures/play-arrow.jpg">
+            <a href ="https://www.youtube.com/watch?v=xEiZ39qBRwo">
+              <img class="album-pic" id="waited-pic" src="pictures/waited-pic.jpg">
+            </a>
+          </td>
+          <td><p class="song-name">Waited 4 U (Odesza Remix)</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!--Drake page-->
+  <div class="drake-page music-not-active">
+    <div class="album-pic-container">
+      <h4 class="artist-info">DRAKE</h4>
+    </div>
+    <div id="drake-song-container">
+      <!--0 to 100-->
+      <table class="drake-song">
+        <tr>
+          <td class="play-option" id="hunnid">
+            <img class="play-arrow" id="1hunnid-arrow" src="pictures/play-arrow.jpg">
+            <a href="https://www.youtube.com/watch?v=I2bBZvSPpOo">
+              <img class="album-pic" id="1hunnid-pic" src="pictures/1hunnid.jpg">
+            </a>
+          </td>
+          <td><p class="song-name">0 to 100</p></td>
+        </tr>
+      </table>
+      <!--Believe Me-->
+      <table class="drake-song">
+        <tr>
+          <td class="play-option" id="believe">
+            <img class="play-arrow" id="believe-arrow" src="pictures/play-arrow.jpg">
+            <a href ="https://www.youtube.com/watch?v=SFswqe0lhkI">
+              <img class="album-pic" id="believe-pic" src="pictures/believeme.jpg">
+            </a>
+          </td>
+          <td><p class="song-name">Believe Me</p></td>
+        </tr>
+      </table>
+      <!--Energy-->
+      <table class="drake-song">
+        <tr>
+          <td class="play-option" id="energy">
+            <img class="play-arrow" id="energy-arrow" src="pictures/play-arrow.jpg">
+            <a href ="https://www.youtube.com/watch?v=7LnBvuzjpr4">
+              <img class="album-pic" id="energy-pic" src="pictures/energy.jpg">
+            </a>
+          </td>
+          <td><p class="song-name">Energy</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!--Tobu page-->
+  <div class="tobu-page music-not-active">
+    <div class="album-pic-container">
+      <h4 id="tobuname">TOBU</h4>
+      <img id="tobu" src="pictures/tobu.jpg">
+    </div>
+    <div id="tobu-song-container">
+      <!--Life-->
+      <table class="tobu-song">
+        <tr>
+          <td class="play-option" id="life">
+            <img class="play-arrow" id="life-arrow" src="pictures/play-arrow.jpg">
+            <a href="https://www.youtube.com/watch?v=bQOmKD-sMt8">
+              <img class="album-pic" id="life-pic" src="pictures/tobulife.jpg">
+            </a>
+          </td>
+          <td><p class="song-name">Life</p></td>
+        </tr>
+      </table>
+      <!--Hope-->
+      <table class="tobu-song">
+        <tr>
+          <td class="play-option" id="hope">
+            <img class="play-arrow" id="hope-arrow" src="pictures/play-arrow.jpg">
+            <a href ="https://www.youtube.com/watch?v=Y1Z3Q3O7IRE">
+              <img class="album-pic" id="hope-pic" src="pictures/hope.jpeg">
+            </a>
+          </td>
+          <td><p class="song-name">Hope</p></td>
+        </tr>
+      </table>
+      <!--Summer Breeze-->
+      <table class="tobu-song">
+        <tr>
+          <td class="play-option" id="summer">
+            <img class="play-arrow" id="summer-arrow" src="pictures/play-arrow.jpg">
+            <a href ="https://www.youtube.com/watch?v=oQn-K3h_MfY">
+              <img class="album-pic" id="summer-pic" src="pictures/summerbreeze.jpg">
+            </a>
+          </td>
+          <td><p class="song-name">Summer Breeze</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  </div>
+  <div class="arrow-container">
+    <img class="music-arrow music-arrow-show" id="left-arrow" src="pictures/left-arrow.png">
+    <img class="music-arrow music-arrow-show" id="right-arrow" src="pictures/right-arrow.png">
+  </div>
+</div>
+<!-- Projects Page-->
+<div class="project-page">
+  <h3 id="projects-title">PROJECTS</h3>
+  <div class="python-slider">
+    <div id="python-title">
+      <h3 id="python-title-text">MEALPOINT TRACKER</h3>
+    </div>
+    <!--Python-slide1-->
+    <div id="python-slide1">
+      <table class="mealplan-slides">
+        <tr>
+          <td class="text-container">
+            <img class="mealplan-text" id = "mealtext1" src="pictures/Pythontext1.png">
+          </td>
+          <td><img class="mealplan-img" src="pictures/slide1.png">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--Python-slide2-->
+    <div id="python-slide2">
+      <table class="mealplan-slides">
+        <tr>
+          <td class="text-container">
+            <img class="mealplan-text" id = "mealtext2" src="pictures/Pythontext2.png">
+          </td>
+          <td><img class="mealplan-img" src="pictures/slide3.png">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--Python-slide3-->
+    <div id="python-slide3">
+      <table class="mealplan-slides">
+        <tr>
+          <td class="text-container">
+            <img class="mealplan-text" id ="mealtext3" src="pictures/Pythontext3.png">
+          </td>
+          <td><img class="mealplan-img" src="pictures/slide2.png">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--Python-slide4-->
+    <div id="python-slide4">
+      <table class="mealplan-slides">
+        <tr>
+          <td class="text-container">
+            <img class="mealplan-text" id ="mealtext4" src="pictures/Pythontext4.png">
+          </td>
+          <td><img class="mealplan-img" src="pictures/slide4.png">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--Python dot nav-->
+    <div id="python-nav">
+      <ul class="python-slider-dots">
+             <li class="python-prev-arrow"><</li>
+             <li class="python-dot python-active-dot">&bull;</li>
+             <li class="python-dot" id="dot2">&bull;</li>
+             <li class="python-dot" id ="dot3">&bull;</li>
+             <li class="python-dot" id="dot4">&bull;</li>
+             <li class="python-next-arrow">></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
+</html>
+
+<!-- Contact
+<div class="contact-info-container">
+  <table class="contact-info">
+    <tr>
+      <td>
+        <div id="gmail-container"><a href="#">
+          <img src="pictures/gmail.jpg" class="logo"id="gmail">
+        </a></div>
+      </td>
+      <td>
+        <div id="twitter-container"><a href="https://twitter.com/johnangg">
+          <div id="graytwittercontainer">
+            <img id="twitter"src="pictures/twittericon.png">
+          <a></div>
+        </div>
+      </td>
+      <td>
+        <div id="linkedin-container"><a href="https://www.linkedin.com/in/john-ang-379315109">
+            <div id="graylinkedincontainer">
+              <img id="graylinkedin" src="pictures/linkedingray.png">
+            </div>
+          </a></div>
+      </td>
+    <tr>
+  </table>
+</div>
+-->
