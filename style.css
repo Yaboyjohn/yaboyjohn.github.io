@@ -17,7 +17,7 @@ body {
   position: absolute;
   height: 30px;
   width: 30px;
-  background-image: url("pictures/hamburger.png");
+  background-image: url("https://cloud.githubusercontent.com/assets/14798163/12802004/e1e67ef8-ca95-11e5-8877-c80e1cd7f791.png");
 }
 
 #menu-container {
@@ -606,7 +606,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: black;
-  background-image: url(pictures/drake.jpg);
+  background-image: url("https://cloud.githubusercontent.com/assets/14798163/12801999/e1d3cc72-ca95-11e5-8ee1-bb3bc2ea6879.jpg");
 }
 
 .drake-song {
