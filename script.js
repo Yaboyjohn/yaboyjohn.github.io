@@ -489,6 +489,10 @@ var menuopen = 0
         $('body').scrollTo('.project-page', {duration:'1500', offsetTop: '0'});
       });
 
+      $('#contact').click(function() {
+        $('body').scrollTo('.project-page', {duration:'1500', offsetTop: '0'});
+      });
+
 
 
       /* projects page */
