@@ -4,6 +4,12 @@ body {
   background-color: black;
 
 }
+
+#INFO {
+  color:white;
+  position: absolute;
+  text-align: center;
+}
 /* nav */
 .navbar {
   position: absolute;
